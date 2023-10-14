@@ -17,10 +17,13 @@ public class Point2D {
         y = valueY;
     }
 
+
     public Point2D(int value) {
+
         this(value, value);
     }
     public Point2D() {
+
         this(0);
     }
 
