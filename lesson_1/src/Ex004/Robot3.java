@@ -78,10 +78,12 @@ public class Robot3 {
     // #region правильные конструкторы
 
     public Robot3(String name) {
+
         this(name, 1);
     }
 
     public Robot3() {
+
         this("");
     }
 

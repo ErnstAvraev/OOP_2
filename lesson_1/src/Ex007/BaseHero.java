@@ -32,6 +32,7 @@ public class BaseHero {
     }
 
     public void healed(int Hp) {
+
         this.hp = Hp + this.hp > this.maxHp ? this.maxHp : Hp + this.hp;
     }
 
@@ -45,5 +46,9 @@ public class BaseHero {
     public void Attack(BaseHero target) {
         int damage = BaseHero.r.nextInt(10, 20);
         target.GetDamage(damage);
+    }
+
+    public void Heal(BaseHero target) {
+        target.healed(BaseHero.r.nextInt(10,20));
     }
 }
