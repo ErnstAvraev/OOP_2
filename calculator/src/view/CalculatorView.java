@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class CalculatorView {
     private final Scanner scanner;
-    String prompt = "Введите число";
     public CalculatorView() {
         scanner = new Scanner(System.in);
     }
